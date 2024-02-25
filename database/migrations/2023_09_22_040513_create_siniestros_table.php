@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('serie')->nullable();
             $table->string('placas')->nullable();
             $table->boolean('terminado')->default(0);
-            $table->SmallInteger('notificacion')->default(1);
+            $table->string('notificacion');
             $table->boolean('pagado')->default(0);
             $table->foreignId('aseguradora_id')->constrained()->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');

@@ -24,6 +24,7 @@ class SiniestroSeeder extends Seeder
                         'terminado' => 0,
                         'aseguradora_id' => 2,
                         'user_id' => 1,
+                        'notificacion'=>json_encode(["num"=>"1", "Fecha"=>Carbon::now(), "time"=> 24]),
                         'created_at' => Carbon::now(),
                         'updated_at' => Carbon::now(),
                     ),
@@ -36,6 +37,7 @@ class SiniestroSeeder extends Seeder
                         'terminado' => 0,
                         'aseguradora_id' => 2,
                         'user_id' => 2,
+                        'notificacion'=>json_encode(["num"=>"1", "Fecha"=>Carbon::now(), "time"=> 24]),
                         'created_at' => Carbon::now(),
                         'updated_at' => Carbon::now(),
                     )

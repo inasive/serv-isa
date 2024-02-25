@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tareas', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->text('nombre', 1000);
             $table->boolean('estado')->default(0);
             $table->foreignId('siniestro_id')->constrained()->onDelete('cascade');
             $table->string('admin')->nullable();
